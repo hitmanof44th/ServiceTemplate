@@ -1,0 +1,13 @@
+[Unit]
+Description=Template Service
+Requires=Network.target
+After=network.target
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=root
+ExecStart=/path/to/programhere
+
+[Install]
+WantedBy=multi-user.target
